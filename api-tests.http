@@ -1,0 +1,52 @@
+### 所有醫師
+GET http://localhost:8080/api/doctors
+
+###
+
+### 單一醫師
+GET http://localhost:8080/api/doctors/D001
+
+###
+
+### 所有病患
+GET http://localhost:8080/api/patients
+
+###
+
+### 所有掛號
+GET http://localhost:8080/api/appointments
+
+###
+
+### 掛號統計
+GET http://localhost:8080/api/appointments/count
+
+###
+
+### 新增醫師
+POST http://localhost:8080/api/doctors
+Content-Type: application/json
+
+{
+  "doctorId": "D999",
+  "name": "測試醫師",
+  "department": "測試科",
+  "specialty": "API 測試"
+}
+
+###
+
+### 修改醫師
+PUT http://localhost:8080/api/doctors/D999
+Content-Type: application/json
+
+{
+  "name": "更新醫師",
+  "department": "內科",
+  "specialty": "高血壓"
+}
+
+###
+
+### 刪除醫師
+DELETE http://localhost:8080/api/doctors/D999
