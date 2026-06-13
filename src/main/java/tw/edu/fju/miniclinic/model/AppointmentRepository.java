@@ -17,4 +17,6 @@ public interface AppointmentRepository
     List<Appointment> findByDoctorAndApptDate(
             Doctor doctor,
             LocalDate apptDate);
+
+    long countByStatus(String status);
 }
